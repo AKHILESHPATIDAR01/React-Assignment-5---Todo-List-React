@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../styles/App.css";
+// import Form from './Form';
+import Todo from "./Todo";
 
-function App() 
-{
+function App() {
+
+	const [todoList , updateTodoList]= useState([]);
+	const [newElement , updateNewElement] = useState("");
+
+	const handleclick = ()=>{
+		// alert("Added");
+	}
+
 	return (
-	<div id="main">
-	//Do not alter main div
-	//Please do not alter the functional component as tests depend on the type of component.
-	</div>
+		<div id="main">
+			<Todo />
+
+		</div>
 	);
 }
 
